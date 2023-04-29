@@ -1,0 +1,6 @@
+代码基于Github上的pytorch版cyclegan源码
+预训练模型已放在checkpoints文件夹内
+测试时请将测试图片放入datasets\valA文件夹内
+并在命令行输入：
+python test.py --epoch latest --gpu_ids 0 --dataroot  ./datasets/valA  --name RCA  --model test --direction AtoB --dataset_mode single --preprocess none
+生成图形可在results文件夹内查看
